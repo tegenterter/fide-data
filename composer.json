@@ -1,0 +1,26 @@
+{
+    "name": "tegenterter/fide-data",
+    "description": "PHP library for downloading and parsing open data published by FIDE",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Thibaut Vandenbussche",
+            "email": "thibaut@vandenbussche.co",
+            "homepage": "https://thibaut.sh",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "FideData\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4",
+        "ext-xmlreader" : "*",
+        "ext-simplexml" : "*"
+    }
+}
