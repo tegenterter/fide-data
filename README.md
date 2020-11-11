@@ -12,7 +12,7 @@
 
 Use [Composer](https://getcomposer.org) to install the library for your project:
 
-    composer require tegenter/fide-data
+    composer require tegenterter/fide-data
     
 ### Basic Usage
 
