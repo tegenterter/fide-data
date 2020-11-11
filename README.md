@@ -1,4 +1,4 @@
-<h1 align="center"><img src="fide.png" alt="FIDE" width="410" height="250"></h1>
+<h1 align="center"><img src="fide.png" alt="FIDE" width="390" height="250"></h1>
 
 **Library for processing open data published by [FIDE](https://www.fide.com) for [PHP](https://php.net)**
 
