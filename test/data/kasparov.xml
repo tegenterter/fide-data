@@ -1,0 +1,16 @@
+<playerslist>
+    <player>
+        <fideid>4100018</fideid>
+        <name>Kasparov, Garry</name>
+        <country>RUS</country>
+        <sex>M</sex>
+        <title>GM</title>
+        <rating>2812</rating>
+        <k>10</k>
+        <rapid_rating>2783</rapid_rating>
+        <rapid_k>20</rapid_k>
+        <blitz_rating>2801</blitz_rating>
+        <blitz_k>20</blitz_k>
+        <birthday>1963</birthday>
+    </player>
+</playerslist>
