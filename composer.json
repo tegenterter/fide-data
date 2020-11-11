@@ -1,7 +1,8 @@
 {
     "name": "tegenterter/fide-data",
-    "description": "PHP library for downloading and parsing open data published by FIDE",
+    "description": "PHP library for processing open data published by FIDE",
     "type": "library",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Thibaut Vandenbussche",
