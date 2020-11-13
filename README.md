@@ -2,6 +2,8 @@
 
 **Library for processing open data published by [FIDE](https://www.fide.com) for [PHP](https://php.net)**
 
+[![Build Status](https://travis-ci.org/tegenterter/fide-data.svg?branch=master)](https://travis-ci.org/tegenterter/fide-data)
+
 ## Features
 
 - Parse and normalize [player rating XML files](https://ratings.fide.com/download_lists.phtml)
