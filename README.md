@@ -23,7 +23,7 @@ Use [Composer](https://getcomposer.org) to install the library for your project:
 
 require __DIR__ . '/vendor/autoload.php';
 
-// Downloading particular rating file from https://ratings.fide.com/download_lists.phtml
+// Download particular rating file from https://ratings.fide.com/download_lists.phtml
 $client = new \FideData\Http\RatingXmlDownloader(__DIR__);
 $path = $client->download(\FideData\Enum\RatingType::STANDARD, 2020, 12);
 
