@@ -23,8 +23,12 @@ Use [Composer](https://getcomposer.org) to install the library for your project:
 
 require __DIR__ . '/vendor/autoload.php';
 
-// Pass any XML rating file downloaded from https://ratings.fide.com/download_lists.phtml
-$rating = new \FideData\PlayerRating('players_list_xml_foa.xml');
+// Downloading particular rating file from https://ratings.fide.com/download_lists.phtml
+$client = new \FideData\Http\RatingXmlDownloader(__DIR__);
+$path = $client->download(\FideData\Enum\RatingType::STANDARD, 2020, 12);
+
+// Read and parse the rating file
+$rating = new \FideData\PlayerRating($path);
 
 /** @var \FideData\Structure\Player $player */
 foreach ($rating->process() as $player) {
@@ -32,6 +36,24 @@ foreach ($rating->process() as $player) {
     $array = $player->toArray();
 
     echo json_encode($array, JSON_PRETTY_PRINT) . PHP_EOL;
+    /**
+    {
+        "fideId": 1503014,
+        "name": "Carlsen, Magnus",
+        "federation": "NOR",
+        "birthYear": 1990,
+        "sex": "M",
+        "title": "GM",
+        "standardRating": {
+            "type": "standard",
+            "rating": 2862,
+            "k": 10
+        },
+        "rapidRating": null,
+        "blitzRating": null,
+        "active": false
+    } 
+    */
 }
 ```
 
