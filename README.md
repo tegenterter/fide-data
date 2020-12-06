@@ -6,7 +6,8 @@
 
 ## Features
 
-- Parse and normalize [player rating XML files](https://ratings.fide.com/download_lists.phtml)
+- Download all player rating XML files [published by FIDE](https://ratings.fide.com/download_lists.phtml)
+- Read and parse player rating XML files
 
 ## Documentation
 
