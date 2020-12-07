@@ -52,7 +52,7 @@ foreach ($rating->process() as $player) {
         },
         "rapidRating": null,
         "blitzRating": null,
-        "active": false
+        "active": true
     } 
     */
 }

@@ -102,7 +102,7 @@ class PlayerRating
                 }
 
                 $flag = (string) $element->flag;
-                $player->setActive($flag === Flag::INACTIVE || $flag === Flag::WOMAN_INACTIVE);
+                $player->setActive($flag !== Flag::INACTIVE && $flag !== Flag::WOMAN_INACTIVE);
 
                 yield $player;
             } else {
